@@ -40,6 +40,7 @@ import android.graphics.Bitmap;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -124,17 +125,28 @@ public class MainActivityNearbyEventsFragment extends Fragment {
 				nearbyEventsFilterDialog.showDialog(interestFilter, timeFilter);
 			}
 		});
-
-		SupportMapFragment mf = (SupportMapFragment)getActivity().getSupportFragmentManager().findFragmentById(R.id.nearby_events_map_fragment);
-		this.map = mf.getMap();
+		
 		this.infoWindow = new InfoWindow(context);
+		this.refreshButton = (TextView) view.findViewById(R.id.main_view_nearby_event_refresh_button);
+		
+		return view;
+	}
+	
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		FragmentManager fm = getChildFragmentManager();
+		SupportMapFragment fragment = (SupportMapFragment) fm.findFragmentById(R.id.nearby_events_map_fragment);
+		if (fragment == null) {
+			fragment = SupportMapFragment.newInstance();
+			fm.beginTransaction().replace(R.id.nearby_events_map_fragment, fragment).commit();
+		}
+		this.map = fragment.getMap();
 		map.setMyLocationEnabled(true);
 		map.getUiSettings().setZoomControlsEnabled(false);
 		if (lastKnown != null) moveCamera(lastKnown, 14);
-		this.refreshButton = (TextView) view.findViewById(R.id.main_view_nearby_event_refresh_button);
-		initMap();
 		
-		return view;
+		initMap();
 	}
 
 	@Override

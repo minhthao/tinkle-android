@@ -1,11 +1,9 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1402659638000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/facebook/libs/android-support-v4.jar
-1411774553000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/google-play-services_lib/libs/android-support-v4.jar
-1412716517000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/Tinkle/libs/android-support-v4.jar
-1411774581000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/PullToRefreshListView/libs/android-support-v4.jar
-1411774614000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/slidingmenulibrary/libs/android-support-v4.jar
-1402659638000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/slidinguppanel/libs/android-support-v4.jar
-1409214484000 1881748 7676c0cb230efa6ac41c47867d372ed5913029d4 /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/google-play-services_lib/libs/google-play-services.jar
-1402659638000 1881748 7676c0cb230efa6ac41c47867d372ed5913029d4 /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/Tinkle/libs/google-play-services.jar
+1417934588000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/facebook/libs/android-support-v4.jar
+1417937781000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/Tinkle/libs/android-support-v4.jar
+1417934552000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/PullToRefreshListView/libs/android-support-v4.jar
+1417937757000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/google-play-services_lib/libs/android-support-v4.jar
+1417934527000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/slidingmenulibrary/libs/android-support-v4.jar
+1417934506000 995386 a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf /Users/minhthaonguyen/Desktop/frenvent (android)/Tinkle/slidinguppanel/libs/android-support-v4.jar

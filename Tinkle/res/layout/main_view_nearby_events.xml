@@ -49,9 +49,9 @@
 
             <fragment
                 android:id="@+id/nearby_events_map_fragment"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent" 
+                android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
             <TextView
                 android:id="@+id/main_view_nearby_event_refresh_button"
