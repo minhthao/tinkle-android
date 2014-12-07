@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_bg" >
+
+            <TextView
+                android:id="@+id/event_full_info_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/submenu_button"
+                android:drawableLeft="@drawable/tab_back_arrow_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="INFO"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/event_full_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/submenu_button"
+                    android:padding="5dp"
+                    android:src="@drawable/header_event_info_icon" />
+
+                <ImageView
+                    android:id="@+id/event_full_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/header_event_photo_icon" />
+
+                <ImageView
+                    android:id="@+id/event_full_posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/header_event_post_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/event_full_share_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/header_event_share_message" />
+
+                <ImageView
+                    android:id="@+id/event_full_attendees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/header_event_attendees" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <fragment
+                android:id="@+id/event_recommendation_people_list_fragment"
+                android:name="com.hitchlab.tinkle.appevent.EventRecommendPeopleListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:layout_alignParentBottom="true" />
+
+            <com.sothree.slidinguppanel.SlidingUpPanelLayout
+                xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/event_full_sliding_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/event_recommendation_people_list_fragment"
+                android:gravity="bottom"
+                sothree:panelHeight="30dp"
+                sothree:shadowHeight="4dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <fragment
+                        android:id="@+id/event_full_detail_fragment"
+                        android:name="com.hitchlab.tinkle.appevent.EventDetailFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <fragment
+                        android:id="@+id/event_album_fragment"
+                        android:name="com.hitchlab.tinkle.appevent.EventPhotoFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp" />
+
+                    <fragment
+                        android:id="@+id/event_post_fragment"
+                        android:name="com.hitchlab.tinkle.appevent.EventPostFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+
+                    <fragment
+                        android:id="@+id/event_recommend_user_info_fragment"
+                        android:name="com.hitchlab.tinkle.appevent.EventRecommendPersonInfoFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:id="@+id/event_full_drag_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="top" />
+                </FrameLayout>
+            </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/event_full_activity_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

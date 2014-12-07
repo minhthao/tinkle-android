@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">166467296867875</string>
+    
+    <string name="app_name">Tinkle</string>
+    <string name="icon_img_desc">Icon Item</string>
+    <string name="pic_desc">Picture</string>
+
+    <string name="tab_list">&#160;List</string>
+    <string name="tab_map">&#160;Map</string>
+    <string name="tab_calendar">&#160;Calendar</string>
+    
+    <string name="menu_my_events">My events</string>
+    <string name="menu_events_feed">Friends\' Events</string>
+    <string name="menu_public_events">Public Events</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    
+    <string name="menu_category_event">EVENTS</string>
+    <string name="menu_category_preference">PREFERENCES</string>
+    <string name="menu_category_follows">FOLLOWS</string>
+    
+    <string name="hint_username">Email or phone</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_friend_name">Friend first name</string>
+    
+    <string name="text_info">Info</string>
+    <string name="text_invited">Invited</string>
+    <string name="text_status"><u>Status:</u></string>
+    <string name="text_location"><u>Location:</u></string>
+    <string name="text_detail"><u>Detail:</u></string>
+    <string name="text_members"><u>Members:</u></string>
+    <string name="text_information">Information</string>
+    <string name="text_album">Album</string>
+    <string name="text_post">Post</string>
+    <string name="text_rsvp">RSVP:&#160;</string>
+    <string name="text_invite">Invite</string>
+    <string name="text_going">Going:&#160;</string>
+    <string name="text_maybe">Maybe:&#160;</string>
+    <string name="text_unreplied">Unreplied:&#160;</string>
+    <string name="text_host">Hosted by:&#160;</string>
+    <string name="text_description"><u>Description:</u></string>
+    <string name="text_like">&#160;Like</string>
+    <string name="text_unlike">&#160;Unlike</string>
+    <string name="text_comment">&#160;Comment</string>
+    <string name="text_comments">Comments</string>
+    <string name="text_write_post">&#160;Write Post</string>
+    <string name="text_share_photo">&#160;Share Photo</string>
+    <string name="text_choose_friends">Choose Friends</string>
+    <string name="text_select_all">Select All</string>
+    <string name="text_what_on_your_mind">What\'s on your mind?</string>
+    
+    <string name="text_upload_photo">Upload Photo</string>
+    <string name="text_add_comment">Write a comment &#8230;</string>
+	
+    
+ 	<string name="text_guests">Guests</string>
+ 	
+ 	<string name="text_attending_guests">Attending guests</string>
+ 	<string name="text_unsure_guests">Unsure guests</string>
+ 	<string name="text_unreplied_guests">Unreplied guests</string>
+    
+</resources>

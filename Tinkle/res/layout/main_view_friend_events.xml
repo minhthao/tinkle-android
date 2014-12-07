@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e5e8" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tab_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="Featured Events"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/main_view_friend_event_filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_view_search_menu_button_bg"
+            android:paddingBottom="7dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dp"
+            android:text="filter"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" 
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/main_view_friend_event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </eu.erikw.PullToRefreshListView>
+
+</LinearLayout>

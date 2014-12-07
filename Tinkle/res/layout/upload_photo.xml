@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" 
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#eeeeee"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Upload photo"
+            android:textIsSelectable="false"/>
+        
+        <TextView
+            android:id="@+id/upload_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/submenu_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/upload_photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/pic_desc"
+        android:padding="10dp"
+        android:scaleType="fitCenter" />
+   
+    <EditText
+        android:id="@+id/upload_photo_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="1"
+        android:background="@drawable/image_bg"
+        android:gravity="top"
+        android:hint="@string/text_add_comment"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:padding="5dp"/>
+
+</LinearLayout>

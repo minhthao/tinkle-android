@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:orientation="horizontal" >
+    
+    <ImageView 
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/pic_desc"
+        android:src="@drawable/ic_launcher"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/notification_type_simple_message_main_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="#666666"
+            android:textIsSelectable="false"
+            android:textSize="13sp" 
+            android:text="Something awesome is joining events event event event event evevent"/>
+        <TextView 
+            android:id="@+id/notification_type_simple_message_time_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textColor="#aaaaaa"
+            android:textIsSelectable="false"
+            android:textSize="11sp"
+            android:text="Thurs, 10/23/2014 at 4:00 pm"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

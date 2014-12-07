@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#eeeeee"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/text_write_post"
+            android:textIsSelectable="false"/>
+        
+        <TextView
+            android:id="@+id/post_status_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submenu_button"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/text_post"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    
+    <EditText 
+        android:id="@+id/post_status_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="0dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:hint="@string/text_what_on_your_mind"
+        android:background="#ffffff"
+        android:inputType="textMultiLine"
+        android:gravity="top"/>
+
+</LinearLayout>

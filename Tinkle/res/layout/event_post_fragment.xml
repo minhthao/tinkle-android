@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/event_feed_new_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/status_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/text_write_post"
+                android:textColor="@color/event_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/tabbar_separator" />
+
+        <LinearLayout
+            android:id="@+id/event_feed_new_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/camera_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/text_share_photo"
+                android:textColor="@color/event_button_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d5d5d5" >
+
+        <eu.erikw.PullToRefreshListView
+            android:id="@+id/event_feed_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </eu.erikw.PullToRefreshListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_top" />
+    </FrameLayout>
+
+</LinearLayout>
