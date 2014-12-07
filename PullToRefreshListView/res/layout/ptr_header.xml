@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ptr_id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp" >
+        
+         <LinearLayout
+            android:id="@+id/ptr_id_textwrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ptr_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="#444444"
+                android:textSize="15sp" 
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/ptr_id_last_updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="#f5f5f5"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ptr_id_image"
+            android:layout_toLeftOf="@id/ptr_id_textwrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ptr_pulltorefresh_arrow" />
+
+        <ProgressBar
+            android:id="@+id/ptr_id_spinner"
+            style="@style/ptr_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ptr_id_textwrapper"
+            android:layout_marginRight="10dp" />
+       
+    </RelativeLayout>
+
+</LinearLayout>

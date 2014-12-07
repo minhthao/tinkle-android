@@ -151,7 +151,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.ebeam.eventbook" />
+                <category android:name="com.hitchlab.tinkle" />
             </intent-filter>
         </receiver>
 
